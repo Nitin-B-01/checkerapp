@@ -1,9 +1,15 @@
+import java.util.Scanner;
 public class palindromrChecker {
     public static void main(String[] args){
-        System.out.println("hello");
-        for(int i=0;i<5;i++){
-            System.out.println("naanthanda leo das");
-            System.out.println("aarambikalama");
-        }
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a string: ");
+        String str = sc.nextLine();
+
+        String reversed = new StringBuilder(str).reverse().toString();
+
+        if(str.equals(reversed))
+            System.out.println("Palindrome");
+        else
+            System.out.println("Not a palindrome");
     }
 }

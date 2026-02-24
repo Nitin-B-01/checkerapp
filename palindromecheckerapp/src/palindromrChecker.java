@@ -3,7 +3,7 @@ public class palindromrChecker {
         System.out.println("hello");
         for(int i=0;i<5;i++){
             System.out.println("naanthanda leo das");
+            System.out.println("aarambikalama");
         }
     }
 }
-git

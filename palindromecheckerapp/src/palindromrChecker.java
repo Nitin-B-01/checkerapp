@@ -5,11 +5,21 @@ public class palindromrChecker {
         System.out.print("Enter a string: ");
         String str = sc.nextLine();
 
-        String reversed = new StringBuilder(str).reverse().toString();
+        String reversed = "";
 
-        if(str.equals(reversed))
-            System.out.println("Palindrome");
-        else
-            System.out.println("Not a palindrome");
+        // Reverse string using for loop
+        for (int i = str.length() - 1; i >= 0; i--) {
+            reversed = reversed + str.charAt(i);
+        }
+
+        // Compare original and reversed
+        if (str.equals(reversed)) {
+            System.out.println("The string is a Palindrome.");
+        } else {
+            System.out.println("The string is NOT a Palindrome.");
+        }
+
+        sc.close();
+
     }
 }
